@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     # training
     model, loss_total_list, loss_reconstruct_list, loss_transfer_list = training(dataset_list, cluster_pairs, nn_paras)
-    plot_loss(loss_total_list, loss_reconstruct_list, loss_transfer_list, data_folder+'ae_cell_type.png')
+    plot_loss(loss_total_list, loss_reconstruct_list, loss_transfer_list, data_folder+'loss.png')
     # extract codes
     code_list = testing(model, dataset_list, nn_paras)
     with open(code_save_file,'wb') as f:

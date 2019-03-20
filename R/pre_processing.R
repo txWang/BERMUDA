@@ -1,7 +1,7 @@
 library(Seurat)
 memory.limit(size = 100000)
-source("R/func_read_data.R")
-source("R/2017-08-28-runMN-US.R")
+source("func_read_data.R")
+source("2017-08-28-runMN-US.R")
 
 folder_name = "pancreas"
 dataset_names = c("muraro_human", "baron_human")

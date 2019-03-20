@@ -3,7 +3,7 @@ Tongxin Wang, Travis S Johnson, Wei Shao, Jie Zhang and Kun Huang
 
 Codes and data for using BERMUDA, a novel transfer-learning-based method for batch-effect correction in single cell RNA sequencing (scRNA-seq) data.
 
-![BERMUDA](https://github.com/txWang/BERMUDA/blob/master/BERMUDA.png "BERMUDA")
+![BERMUDA](https://github.com/txWang/BERMUDA/BERMUDA.png "BERMUDA")
 
 ## Dependencies
 * Python 3.6.5
@@ -16,5 +16,7 @@ Codes and data for using BERMUDA, a novel transfer-learning-based method for bat
 ## Files
 *main_pancreas.py*: An Example of combining two pancreas datasets\
 *main_pbmc.py*: An Example of combining PBMCs with pan T cells\
-*pre_processing.R*: Workflow of detecting clusters using Seurat and identifying similar clusters using MetaNeighbor\
 *de_analysis*: Gene differential expression analysis using T-test with Benjamini-Hochberg Procedure on pancreas datasets
+*R/pre_processing.R*: Workflow of detecting clusters using Seurat and identifying similar clusters using MetaNeighbor\
+*R/gaussian.R*: Simulate data based on 2D Gaussian distributions\
+*R/splatter.R*: Simulate data using Splatter package

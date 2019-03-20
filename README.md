@@ -3,7 +3,7 @@ Tongxin Wang, Travis S Johnson, Wei Shao, Jie Zhang and Kun Huang
 
 Codes and data for using BERMUDA, a novel transfer-learning-based method for batch-effect correction in single cell RNA sequencing (scRNA-seq) data.
 
-![BERMUDA](https://github.com/txWang/BERMUDA/BERMUDA.png "BERMUDA")
+![BERMUDA](https://github.com/txWang/BERMUDA/blob/master/BERMUDA.png "BERMUDA")
 
 ## Dependencies
 * Python 3.6.5

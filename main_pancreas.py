@@ -24,7 +24,7 @@ similarity_thr = 0.90 #S_thr in the paper, choose between 0.85-0.9
 # nn parameter
 code_dim = 20
 batch_size = 50 # batch size for each cluster
-num_epochs = 2000
+num_epochs = 100
 base_lr = 1e-3
 lr_step = 200  # step decay of learning rates
 momentum = 0.9

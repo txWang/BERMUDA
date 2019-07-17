@@ -19,7 +19,7 @@ torch.backends.cudnn.benchmark = False
 torch.manual_seed(seed)
 
 # IMPORTANT PARAMETER
-similarity_thr = 0.85 #S_thr in the paper, choose between 0.85-0.9
+similarity_thr = 0.90 #S_thr in the paper, choose between 0.85-0.9
 
 # nn parameter
 code_dim = 20

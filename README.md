@@ -1,4 +1,4 @@
-# BERMUDA: Batch-Effect ReMoval Using Deep Autoencoders
+# BERMUDA: Batch Effect ReMoval Using Deep Autoencoders
 Tongxin Wang, Travis S Johnson, Wei Shao, Zixiao Lu, Bryan R Helm, Jie Zhang and Kun Huang
 
 Codes and data for using BERMUDA, a novel transfer-learning-based method for batch-effect correction in single cell RNA sequencing (scRNA-seq) data.

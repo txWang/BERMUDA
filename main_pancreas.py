@@ -19,12 +19,12 @@ torch.backends.cudnn.benchmark = False
 torch.manual_seed(seed)
 
 # IMPORTANT PARAMETER
-similarity_thr = 0.90 #S_thr in the paper, choose between 0.85-0.9
+similarity_thr = 0.85 #S_thr in the paper, choose between 0.85-0.9
 
 # nn parameter
 code_dim = 20
 batch_size = 50 # batch size for each cluster
-num_epochs = 100
+num_epochs = 200
 base_lr = 1e-3
 lr_step = 200  # step decay of learning rates
 momentum = 0.9
@@ -33,10 +33,10 @@ gamma = 1  # regularization between reconstruction and transfer learning
 log_interval = 1
 # CUDA
 device_id = 0 # ID of GPU to use
-torch.cuda.set_device(device_id)
-torch.cuda.manual_seed(seed)
 cuda = torch.cuda.is_available()
 if cuda:
+    torch.cuda.set_device(device_id)
+    torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
 
 pre_process_paras = {'take_log': True, 'standardization': True, 'scaling': True}

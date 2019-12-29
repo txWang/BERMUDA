@@ -48,6 +48,29 @@ seurat_preprocessing <- function(dataset, dataset_name) {
 }
 
 
+# write a scRNA-seq dataset into a csv file
+# Input:
+#   filename: name of the output data file
+#   data: gene expression data, rownames are gene names
+#   sample_labels: integer labels of samples (e.g. human_1)
+#   cell_labels: integer labels of cell types
+# Output:
+# a .csv file
+#   first row is sample labels, second row is cell labels
+#   the rest rows are gene expression data
+#   the first column is sample_label, cell_label and gene symbols
+write_dataset <- function(filename, data, sample_labels, cell_labels) {
+  cell_labels = data.frame(t(cell_labels))
+  sample_labels = data.frame(t(sample_labels))
+  rownames(cell_labels) = c("cell_label")
+  rownames(sample_labels) = c("sample_labels")
+  # write csv
+  write.table(sample_labels, filename, sep = ",", quote = F, col.names = F, row.names = T)
+  write.table(cell_labels, filename, sep = ",", quote = F, col.names = F, row.names = T, append = T)
+  write.table(data, filename, sep = ",", quote = F, col.names = F, row.names = T, append = T)
+}
+
+
 # write a scRNA-seq dataset into a csv file, with cluster labels identified by Seurat
 # Input:
 #   filename: name of the output data file

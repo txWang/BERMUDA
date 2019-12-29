@@ -1,5 +1,5 @@
 library(splatter)
-source("func_read_data.R")
+source("func_data.R")
 
 num_cells = c(2000, 1000)
 group_prob = c(0.4, 0.3, 0.2, 0.1)

@@ -1,6 +1,6 @@
 # Code modified from
 # https://github.com/MarioniLab/MNN2017/blob/master/Simulations/simulateBatches.R
-source("func_read_data.R")
+source("func_data.R")
 
 # This script generates some (highly synthetic!) expression data with a batch effect 
 # and uneven population composition between batches.

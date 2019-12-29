@@ -1,6 +1,6 @@
 library(Seurat)
 memory.limit(size = 100000)
-source("func_read_data.R")
+source("func_data.R")
 source("2017-08-28-runMN-US.R")
 
 folder_name = "pancreas"
